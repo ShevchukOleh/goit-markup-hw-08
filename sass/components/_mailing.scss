@@ -1,0 +1,96 @@
+.mailing {
+    @media screen and (min-width: 768px) {
+            
+    }
+    
+    @media screen and (min-width: 1200px) {
+        margin-left: auto;
+    }
+
+    &-title {
+        justify-content: center;
+        display: flex;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--white-color);
+        margin-bottom: 20px;
+        margin-top: 60px;
+        @media screen and (min-width: 768px) {
+
+        }
+        
+        @media screen and (min-width: 1200px) {
+            display: block;
+            margin-top: 0;
+        }
+    }
+}
+
+.position-mailing {
+    display: flex;
+    justify-content: center;
+    @media screen and (min-width: 768px) {}
+    
+    @media screen and (min-width: 1200px) {
+        display: inline-block;
+        
+    }
+}
+
+.mailing-email {
+    display: flex;
+    justify-content: center;
+    outline: none;
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: var(--hero-background-color);
+    color: var(--white-color);
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    transition: border-color 250ms var(--timing-function);
+    margin-bottom: 20px;
+    @media screen and (min-width: 768px) {}
+    
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 0;
+    }
+
+    &:focus {
+        border-color: #188CE8;
+    }
+}
+
+.mailing-button {
+    width: 200px;
+    height: 50px;
+    padding: 10px 28px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: background-color 250ms var(--timing-function);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    @media screen and (min-width: 768px) {}
+    
+    @media screen and (min-width: 1200px) {
+        margin-left: 12px;
+    }
+
+    &:focus,
+    &:hover {
+        background-color: #188CE8;
+    }
+}
+
+.mailing-icon {
+    margin-left: 10px;
+    fill: var(--white-color);
+}

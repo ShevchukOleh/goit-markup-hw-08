@@ -1,0 +1,70 @@
+.hero {
+    padding: 118px 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    flex-grow: 1;
+    margin: 0 auto;
+    text-align: center;
+    background-image: var(--gradient),
+            url(../images/hero-mob-1x.jpg);
+        @include retina {
+        background-image: var(--gradient),
+            url(../images/hero-mob-2x.jpg);
+        }
+
+        @media screen and (min-width: 768px) {
+            background-image: var(--gradient),
+                    url(../images/hero-tab-1x.jpg);
+            
+            @include retina {
+                background-image: var(--gradient),
+                    url(../images/hero-tab-2x.jpg);
+            }
+        }
+
+        @media screen and (min-width: 1200px) {
+            padding: 200px 0;
+            max-width: 1600px;
+            background-image: var(--gradient),
+                    url(../images/hero-1x.jpg);
+            
+            @include retina {
+                background-image: var(--gradient),
+                    url(../images/hero-2x.jpg);
+            }
+        }
+
+    &__title {
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 1.61;
+        text-align: center;
+        letter-spacing: 0.06em;
+        color: var(--white-color);
+        text-transform: uppercase;
+        margin-bottom: 30px;
+        justify-content: center;
+
+        @media screen and (min-width: 1200px) {
+            font-size: 44px;
+            line-height: 1.36;
+        }
+    }
+}
+
+.hero__button {
+    width: 200px;
+    padding: 10px 24px;
+
+    &:hover,
+    &:focus {
+        color: var(--color-blue);
+        background-color: var(--white-color);
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding: 10px 32px;
+        width: 216px;
+    }
+}

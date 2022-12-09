@@ -1,0 +1,112 @@
+.address {
+    color: var(--communication-color);
+    background-color: var(--hero-background-color);
+}
+
+.footer {
+    display: block;
+    justify-content: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    align-items: center;
+    @media screen and (min-width: 768px) {
+        
+    }       
+    
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: baseline;
+    }
+}
+
+.position-tablet {
+    @media screen and (min-width: 768px) {
+            display: flex;
+            align-items: baseline;
+            justify-content: center;
+        }
+}
+
+.address-info {
+    margin-bottom: 60px;
+    @media screen and (min-width: 768px) {
+          margin-bottom: 0;  
+    }
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: center;
+    color: var(--white-color);
+    margin-bottom: 20px;
+    @media screen and (min-width: 768px) {}
+    
+    @media screen and (min-width: 1200px) {
+        justify-content: flex-start;
+    }
+}
+
+.address-list {
+    margin-top: 20px;
+
+    & li:not(:last-child) {
+        margin-bottom: 9px;
+    }
+}
+
+.address-list__street {
+    display: flex;
+    justify-content: center;
+    font-style: normal;
+    color: var(--white-color);
+    text-decoration: none;
+    transition: color 250ms var(--timing-function);
+    @media screen and (min-width: 768px) {}
+    
+    @media screen and (min-width: 1200px) {
+        justify-content: flex-start;
+    }
+
+    &:hover,
+    &:focus {
+        color: var(--color-blue);
+    }
+}
+
+.address-list__email {
+    display: flex;
+    justify-content: center;
+    font-style: normal;
+    color: var(--communication-color);
+    text-decoration: none;
+    transition: color 250ms var(--timing-function);
+    @media screen and (min-width: 768px) {}
+
+    @media screen and (min-width: 1200px) {
+        justify-content: flex-start;
+    }
+
+    &:hover,
+    &:focus {
+        color: var(--color-blue);
+    }
+}
+
+.address-list__number {
+    display: flex;
+    justify-content: center;
+    font-style: normal;
+    color: var(--communication-color);
+    text-decoration: none;
+    transition: color 250ms var(--timing-function);
+    @media screen and (min-width: 768px) {}
+
+    @media screen and (min-width: 1200px) {
+        justify-content: flex-start;
+    }   
+
+    &:hover,
+    &:focus {
+        color: var(--color-blue);
+    }
+}
