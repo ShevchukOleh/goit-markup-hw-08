@@ -522,7 +522,7 @@ body {
   background: var(--team-background-color);
 }
 @media screen and (max-width: 479px) {
-  .images-team {
+  .images-size {
     width: calc(100vw - 30px);
   }
 }
@@ -916,10 +916,11 @@ body {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  gap: 8px;
   margin-bottom: 40px;
-}
-.filter-list li:not(:last-child) {
-  margin-right: 8px;
+  /*& li:not(:last-child) {
+      margin-right: 8px;
+  }*/
 }
 @media screen and (min-width: 768px) {
   .filter-list {
@@ -961,7 +962,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  padding-bottom: 94px;
 }
 .portfolio-cards__info {
   position: relative;
@@ -1041,8 +1041,8 @@ body {
 
 .modal {
   position: absolute;
-  min-width: 528px;
-  min-height: 581px;
+  width: 450px;
+  height: 609px;
   top: 50%;
   left: 50%;
   padding: 40px;
@@ -1055,14 +1055,31 @@ body {
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scaleY(1.5);
 }
+@media screen and (max-width: 479px) {
+  .modal {
+    width: calc(100vw - 30px);
+    overflow: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    min-width: 528px;
+    min-height: 581px;
+  }
+}
 .modal__title {
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 12px;
   color: var(--text-color);
+}
+@media screen and (min-width: 1200px) {
+  .modal__title {
+    line-height: 1.15;
+  }
 }
 
 .close-button {
@@ -1079,6 +1096,7 @@ body {
   align-items: center;
   cursor: pointer;
   margin-bottom: 2px;
+  fill: var(--text-color);
   transition: border-color 250ms var(--timing-function);
 }
 .close-button:hover, .close-button:focus {
@@ -1174,10 +1192,15 @@ body {
   line-height: 1;
   letter-spacing: 0.03em;
 }
+@media screen and (max-width: 479px) {
+  .check {
+    display: block;
+  }
+}
 
 .check__text {
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: #555555;
   display: flex;
@@ -1195,10 +1218,28 @@ body {
   justify-content: center;
   transition: background-color 250ms var(--timing-function), border 250ms var(--timing-function);
 }
+@media screen and (min-width: 1200px) {
+  .check__text {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
 
 .check__modal:checked + .check__text span {
   background-color: var(--color-blue);
   border: 2px solid var(--color-blue);
+}
+
+.check__contract {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+@media screen and (min-width: 1200px) {
+  .check__contract {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .button-position {
@@ -1224,9 +1265,9 @@ body {
   width: 100vw;
   height: 100vh;
   padding: 48px 40px;
-  padding-bottom: 100px;
+  padding-bottom: 90px;
   background-color: var(--white-color);
-  transition: opacity 250ms var(--timing-function), visibility 250ms var(--timing-function);
+  transition: opacity 250ms var(--timing-function), visibility 250ms var(--timing-function), transform 250ms var(--timing-function);
 }
 .mobile-menu > .menu-container {
   height: 100%;
@@ -1245,6 +1286,10 @@ body {
   .mobile-menu {
     display: none;
   }
+}
+
+.mobile-menu.is-hidden {
+  transform: translate(-50%, -50%) scaleY(1.5);
 }
 
 .menu-open {
