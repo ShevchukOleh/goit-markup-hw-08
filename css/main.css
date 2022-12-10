@@ -112,9 +112,6 @@ body {
 .navigation__list {
   display: none;
 }
-.navigation__list li:not(:last-child) {
-  margin-right: 50px;
-}
 @media screen and (min-width: 768px) {
   .navigation__list {
     margin-left: 88px;
@@ -122,10 +119,22 @@ body {
     list-style: none;
     display: flex;
   }
+  .navigation__list li:first-child {
+    margin-right: 56px;
+  }
+  .navigation__list li:last-child {
+    margin-left: 51px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .navigation__list {
     margin-left: 93px;
+  }
+  .navigation__list li:first-child {
+    margin-right: 51px;
+  }
+  .navigation__list li:last-child {
+    margin-left: 55px;
   }
 }
 
@@ -280,11 +289,6 @@ body {
   margin-top: 30px;
   flex-wrap: wrap;
 }
-@media screen and (min-width: 768px) {
-  .customers-list {
-    flex-wrap: wrap;
-  }
-}
 @media screen and (min-width: 1200px) {
   .customers-list {
     margin-top: 50px;
@@ -329,12 +333,6 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .features-list {
-    display: flex;
-    flex-wrap: nowrap;
   }
 }
 @media screen and (min-width: 768px) {
@@ -521,6 +519,7 @@ body {
 .team {
   background: var(--team-background-color);
 }
+
 @media screen and (max-width: 479px) {
   .images-size {
     width: calc(100vw - 30px);
@@ -540,9 +539,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .team-list {
-    display: flex;
     flex-wrap: nowrap;
-    gap: 30px;
     margin-top: 50px;
   }
 }
@@ -570,11 +567,6 @@ body {
   margin-bottom: 30px;
 }
 @media screen and (min-width: 768px) {
-  .team-list__card:not(:last-child) {
-    margin-bottom: 0;
-  }
-}
-@media screen and (min-width: 1200px) {
   .team-list__card:not(:last-child) {
     margin-bottom: 0;
   }
@@ -916,11 +908,8 @@ body {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 15px 8px;
   margin-bottom: 40px;
-  /*& li:not(:last-child) {
-      margin-right: 8px;
-  }*/
 }
 @media screen and (min-width: 768px) {
   .filter-list {
@@ -932,7 +921,6 @@ body {
 @media screen and (min-width: 1200px) {
   .filter-list {
     margin-bottom: 50px;
-    justify-content: center;
   }
 }
 
@@ -1265,7 +1253,7 @@ body {
   width: 100vw;
   height: 100vh;
   padding: 48px 40px;
-  padding-bottom: 90px;
+  /*padding-bottom: 90px;*/
   background-color: var(--white-color);
   transition: opacity 250ms var(--timing-function), visibility 250ms var(--timing-function), transform 250ms var(--timing-function);
 }
@@ -1278,11 +1266,6 @@ body {
   overflow: auto;
 }
 @media screen and (min-width: 768px) {
-  .mobile-menu {
-    display: none;
-  }
-}
-@media screen and (min-width: 1200px) {
   .mobile-menu {
     display: none;
   }
@@ -1305,11 +1288,6 @@ body {
   fill: var(--color-blue);
 }
 @media screen and (min-width: 768px) {
-  .menu-open {
-    display: none;
-  }
-}
-@media screen and (min-width: 1200px) {
   .menu-open {
     display: none;
   }

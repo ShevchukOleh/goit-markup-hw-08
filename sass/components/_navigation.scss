@@ -6,19 +6,29 @@
 .navigation__list {
     display: none;
 
-    & li:not(:last-child) {
-        margin-right: 50px;
-    }
-
     @media screen and (min-width: 768px) {
         margin-left: 88px;
         padding: 0;
         list-style: none;
         display: flex;
+        & li:first-child {
+            margin-right: 56px;
+        }
+    
+        & li:last-child { 
+            margin-left: 51px;
+        }
     }
 
     @media screen and (min-width: 1200px) {
         margin-left: 93px;
+        & li:first-child {
+            margin-right: 51px;
+        }
+    
+        & li:last-child {
+            margin-left: 55px;
+        }
     }
 }
 

@@ -9,10 +9,7 @@
     padding-top: 60px;
     padding-bottom: 60px;
     align-items: center;
-    @media screen and (min-width: 768px) {
-        
-    }       
-    
+
     @media screen and (min-width: 1200px) {
         display: flex;
         align-items: baseline;
@@ -21,16 +18,17 @@
 
 .position-tablet {
     @media screen and (min-width: 768px) {
-            display: flex;
-            align-items: baseline;
-            justify-content: center;
-        }
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+    }
 }
 
 .address-info {
     margin-bottom: 60px;
+
     @media screen and (min-width: 768px) {
-          margin-bottom: 0;  
+        margin-bottom: 0;
     }
 }
 
@@ -39,8 +37,7 @@
     justify-content: center;
     color: var(--white-color);
     margin-bottom: 20px;
-    @media screen and (min-width: 768px) {}
-    
+
     @media screen and (min-width: 1200px) {
         justify-content: flex-start;
     }
@@ -61,8 +58,7 @@
     color: var(--white-color);
     text-decoration: none;
     transition: color 250ms var(--timing-function);
-    @media screen and (min-width: 768px) {}
-    
+
     @media screen and (min-width: 1200px) {
         justify-content: flex-start;
     }
@@ -80,7 +76,6 @@
     color: var(--communication-color);
     text-decoration: none;
     transition: color 250ms var(--timing-function);
-    @media screen and (min-width: 768px) {}
 
     @media screen and (min-width: 1200px) {
         justify-content: flex-start;
@@ -99,11 +94,10 @@
     color: var(--communication-color);
     text-decoration: none;
     transition: color 250ms var(--timing-function);
-    @media screen and (min-width: 768px) {}
 
     @media screen and (min-width: 1200px) {
         justify-content: flex-start;
-    }   
+    }
 
     &:hover,
     &:focus {

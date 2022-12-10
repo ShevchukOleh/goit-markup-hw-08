@@ -6,11 +6,6 @@
             flex-wrap: wrap;
             gap: 30px;
         }
-    
-        @media screen and (min-width: 1200px) {
-            display: flex;
-            flex-wrap: nowrap;
-        }
 
     &__item {
         @media screen and (min-width: 768px) {

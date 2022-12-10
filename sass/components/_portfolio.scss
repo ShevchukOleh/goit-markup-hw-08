@@ -6,12 +6,8 @@
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
+    gap: 15px 8px;
     margin-bottom: 40px;
-
-    /*& li:not(:last-child) {
-        margin-right: 8px;
-    }*/
 
     @media screen and (min-width: 768px) {
         margin-bottom: 30px;
@@ -20,7 +16,6 @@
     }
     @media screen and (min-width: 1200px) {
         margin-bottom: 50px;
-        justify-content: center;
     }
 }
 

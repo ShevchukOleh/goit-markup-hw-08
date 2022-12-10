@@ -5,7 +5,7 @@
     width: 100vw;
     height: 100vh;
     padding: 48px 40px;
-    padding-bottom: 90px;
+    /*padding-bottom: 90px;*/
     background-color: var(--white-color);
     transition: opacity 250ms var(--timing-function),
             visibility 250ms var(--timing-function),
@@ -18,10 +18,8 @@
         justify-content: space-between;
         overflow: auto;
     }
+
     @media screen and (min-width: 768px) {
-        display: none;
-    }
-    @media screen and (min-width: 1200px) {
         display: none;
     }
 }
@@ -42,11 +40,8 @@
     &:focus {
         fill: var(--color-blue);
     }
-    
+
     @media screen and (min-width: 768px) {
-        display: none;
-    }
-    @media screen and (min-width: 1200px) {
         display: none;
     }
 }
@@ -81,7 +76,7 @@
     }
 }
 .mobile-studio {
- margin-bottom: 36px;
+    margin-bottom: 36px;
 }
 
 .mobile-navigation__portfolio {
@@ -94,7 +89,7 @@
 }
 
 .mobile-portfolio {
- margin-bottom: 32px;
+    margin-bottom: 32px;
 }
 
 .mobile-navigation__contacts {
